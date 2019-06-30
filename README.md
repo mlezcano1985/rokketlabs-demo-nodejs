@@ -8,7 +8,6 @@ Simple aplicación desarrollada en ExpressJS que expone 2 endpoints.
 # Cómo empezar?
 - Clonar o descargar el repositorio.
 - Abrir un terminal en la raíz del proyecto.
-- Instalar dependencias usando el comando `npm install`.
 
 # Ejecutar la API con Docker
 - Instalar [Docker](https://docs.docker.com/compose/install/) en dependencia de su sistema operativo.
@@ -22,6 +21,7 @@ Simple aplicación desarrollada en ExpressJS que expone 2 endpoints.
 # Ejecutar la API sin Docker
 - Instalar versión estable de [NodeJS](https://nodejs.org/es/download/).
 - Instalar versión estable de [MongoDB](https://www.mongodb.com/download-center/community) local. Para este demo se utilizó la versión 4.0.4 en Window x64. En caso de utilizar otro servidor de mongo puede editar la cadena de conexión en el fichero _migrate-mongo-config.js_, ubicado en la raíz del proyecto, sustituyendo su cadena de conexión por la existente: _localhost:27017_ .
+- Instalar dependencias usando el comando `npm install`.
 - Ejecutar el comando `npm start` para iniciar la API. Aparecerá un log en la consola para indicar que la app y la bd están en ejecución.
 - Correr migración para insertar datos de prueba en la bd de mongo con el comando `npm run migrate`.
 - Abrir el browser para probar los endpoint expuestos.
