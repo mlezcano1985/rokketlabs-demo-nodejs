@@ -1,12 +1,14 @@
 // In this file you can configure migrate-mongo
 
+const dbHost = process.env['DB_HOST'] ? 'db:27017': 'localhost:27017';
+console.log('dbHost: ', dbHost);
 module.exports = {
 	mongodb: {
 		// TODO Change (or review) the url to your MongoDB:
-		url: 'mongodb://localhost:27017',
+		url: `mongodb://${dbHost}`,
 
 		// TODO Change this to your database name:
-		databaseName: 'node_app',
+		databaseName: 'reign_db',
 
 		options: {
 			useNewUrlParser: true // removes a deprecation warning when connecting
